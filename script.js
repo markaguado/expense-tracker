@@ -109,7 +109,7 @@ window.onload = function () {
     // weather app
 
     const weatherDiv = document.querySelector('.weather');
-    const apiKey = '10e2a3fa8cb5bcb777c04b9e900957f3';
+    const apiKey = process.env.API_KEY;
     const urlWeather = `https://api.openweathermap.org/data/2.5/weather?q=Ottawa&appid=${apiKey}&units=metric`;
 
     fetch(urlWeather)
