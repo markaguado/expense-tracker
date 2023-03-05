@@ -83,7 +83,7 @@ expenseList.addEventListener('click', function (event) {
 
 // api for coinbase
 
-import { API_KEY } from "./config.js";
+// import { API_KEY } from "./config.js";
 
 // api for coinbase
 const currency = document.getElementById('currency');
@@ -109,30 +109,30 @@ window.onload = function () {
 
     // weather app
 
-    const weatherDiv = document.querySelector('.weather');
-    const apiKey = API_KEY;
-    const urlWeather = `https://api.openweathermap.org/data/2.5/weather?q=Ottawa&appid=${apiKey}&units=metric`;
+    // const weatherDiv = document.querySelector('.weather');
+    // const apiKey = API_KEY;
+    // const urlWeather = `https://api.openweathermap.org/data/2.5/weather?q=Ottawa&appid=${apiKey}&units=metric`;
 
-    fetch(urlWeather)
-        .then(response => response.json())
-        .then(data => {
-            const description = data.weather[0].description;
-            const temp = data.main.temp;
-            const feelsLike = data.main.feels_like;
-            const humidity = data.main.humidity;
-            const windSpeed = data.wind.speed;
-            const weatherHTML = `
-                <h2>Ottawa</h2>
-                <p>Description: ${description}</p>
-                <p>Temperature: ${temp}°C</p>
-                <p>Feels like: ${feelsLike}°C</p>
-                <p>Humidity: ${humidity}%</p>
-                <p>Wind Speed: ${windSpeed}m/s</p>
-            `;
-            weatherDiv.innerHTML = weatherHTML;
-        })
-        .catch(error => {
-            console.error(error);
-            weatherDiv.textContent = 'Error getting weather data.';
-        });
+    // fetch(urlWeather)
+    //     .then(response => response.json())
+    //     .then(data => {
+    //         const description = data.weather[0].description;
+    //         const temp = data.main.temp;
+    //         const feelsLike = data.main.feels_like;
+    //         const humidity = data.main.humidity;
+    //         const windSpeed = data.wind.speed;
+    //         const weatherHTML = `
+    //             <h2>Ottawa</h2>
+    //             <p>Description: ${description}</p>
+    //             <p>Temperature: ${temp}°C</p>
+    //             <p>Feels like: ${feelsLike}°C</p>
+    //             <p>Humidity: ${humidity}%</p>
+    //             <p>Wind Speed: ${windSpeed}m/s</p>
+    //         `;
+    //         weatherDiv.innerHTML = weatherHTML;
+    //     })
+    //     .catch(error => {
+    //         console.error(error);
+    //         weatherDiv.textContent = 'Error getting weather data.';
+    //     });
 }
