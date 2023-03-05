@@ -83,6 +83,7 @@ expenseList.addEventListener('click', function (event) {
 
 // api for coinbase
 
+import { API_KEY } from "./config.js";
 
 // api for coinbase
 const currency = document.getElementById('currency');
@@ -109,7 +110,7 @@ window.onload = function () {
     // weather app
 
     const weatherDiv = document.querySelector('.weather');
-    const apiKey = process.env.API_KEY;
+    const apiKey = API_KEY;
     const urlWeather = `https://api.openweathermap.org/data/2.5/weather?q=Ottawa&appid=${apiKey}&units=metric`;
 
     fetch(urlWeather)
