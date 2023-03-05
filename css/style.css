@@ -1,0 +1,75 @@
+li button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  width: 120px;
+}
+
+.btn {
+  width: 100%;
+  margin-top: 0.7em;
+}
+
+h1 {
+  margin-bottom: 0.6em;
+}
+
+.weather > p,
+#currency > p {
+  margin: 0;
+}
+
+.wrapper {
+  padding-top: 2em;
+  display: flex;
+  justify-content: space-around;
+}
+.wrapper .wrapper-items:first-child {
+  flex-basis: 90%;
+  padding-right: 20px;
+}
+.wrapper .wrapper-items:last-child {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-container .flex-items {
+  flex-basis: 35%;
+}
+.flex-container .flex-items #total {
+  font-size: 24px;
+  font-weight: 500;
+  background-color: #F2F2F2;
+  padding: 15px;
+  color: #000;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.flex-container .flex-items ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.flex-container .flex-items ul li:last-child {
+  border-bottom-right-radius: unset;
+  border-bottom-left-radius: unset;
+}
+.flex-container .flex-items:last-child {
+  padding-left: 20px;
+  flex-basis: 65%;
+}
+
+/*# sourceMappingURL=style.css.map */
